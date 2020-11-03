@@ -5,7 +5,7 @@ class account
 	String name,accno,type;
 	float bal;
 	int option;
-	float deposit,rate,years,ci=0,withdrawal=0;
+	float deposit,rate,years,withdrawal=0;
 	
 	account()
 	{
@@ -23,6 +23,7 @@ class account
 }
 class sav_acct extends account
 {
+	float ci=0;
 	boolean checkbookfacility= false;
 	void sav_activity()
 	{
@@ -150,3 +151,4 @@ class bank{
 		} 
 	}
 }
+		
